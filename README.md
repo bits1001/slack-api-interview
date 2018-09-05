@@ -47,11 +47,11 @@ Observe that the message **It is raining. Carry an umbrella** is sent to the #br
 ### Technical Details
 * The app is built with Expressjs - a Node.js web framework. 
 
-[Expressjs](https://expressjs.com/) - The web framework used
+    [Expressjs](https://expressjs.com/) - The web framework used
 
 * It uses nodejs Slack SDK to integrate with slack APIs. 
 
-[Slack SDK for Node js](https://slackapi.github.io/node-slack-sdk)
+    [Slack SDK for Node js](https://slackapi.github.io/node-slack-sdk)
 
 * [Slack API](https://api.slack.com/)
 
