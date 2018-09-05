@@ -26,11 +26,11 @@ Run the server with the command `node app.js`
 
 From a browser, go to http://localhost:3000/
 
-### What the app does
+### What does the App do?
 The primary usecase this app solves is to notify everyone in a particular channel based on certain event.
 e.g. Whehever it is going to rain, this app will send a message to #bring-an-umbrella Slack channel. 
 
-### How the app works
+### How does the App work?
 #### Steps
 
 Sign in to the Slack App.
@@ -57,6 +57,28 @@ Observe that the message **It is raining. Carry an umbrella** is sent to the #br
 
 
 ### Test Cases
+#### Functional Tests
+     When a user clicks the button, correct message is sent to the correct channel.
+     If a user is signed in, they should see the message right away.
+     If a user is not signed in, they should see the message when they login along with the correct timestamp of when the message was actually sent.
+     Test on the mobile slack app. Push notification when a user receives the message
+     Test a very long message and the time it takes to be sent.
+     Test the case where Slack API is unavailable.
+     TEst the case where Slack API is wrongly configured. (i.e wrong URL)
+     When a user clicks the button, it should correctly display the status of the action.
+     Test the case with connectivity problems.
+     Test all the cases in a slow network connection.
+     Test timeouts.
+     Messages should have the correct timestamp when delivered.
+     The incoming message should be visible to all the members of the channel
+#### Performance Tests
+     Test how long does it take for the message to be sent.
+#### Stress Tests
+     Test the app against extreme load
+#### Load Tests
+     Test with the channel having 300-400 members
+     Tests with 100's **It's raining** events together
+
 
 
 ## Author
