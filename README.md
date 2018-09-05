@@ -1,6 +1,4 @@
-# Project Title
-
-Slack Interview App
+# Slack Interview App
 
 ### Prerequisites
 
@@ -45,11 +43,11 @@ Observe that the message **It is raining. Carry an umbrella** is sent to the #br
 
 
 ### Technical Details
-* The app is built with Expressjs - a Node.js web framework. 
+* The app is built with ExpressJS - a Node.js web framework. 
 
     [Expressjs](https://expressjs.com/) - The web framework used
 
-* It uses nodejs Slack SDK to integrate with slack APIs. 
+* It uses NodeJS Slack SDK to integrate with Slack APIs. 
 
     [Slack SDK for Node js](https://slackapi.github.io/node-slack-sdk)
 
@@ -74,17 +72,22 @@ Observe that the message **It is raining. Carry an umbrella** is sent to the #br
      Test case where server stops after landing on the homepage
      User not added to the workspace should not see the channel #bring-an-umbrella
 #### Performance Tests
-     Test how long does it take for the message to be sent.
+     Testing slack API's performance
 #### Stress Tests
-     Test the app against extreme load
+     Test the App against extreme load to see how it behaves when it breaks
+     Test the API with extreme load.
 #### Load Tests
-     Test with the channel having 300-400 members
-     Tests with 100's **It's raining** events together
+     Test with the channel having 300-400 members.
+     Tests with 100's **It's raining** events together.
 #### Integration Tests
      Test the case where Slack API is unavailable.
-     TEst the case where Slack API is wrongly configured. (i.e wrong URL)
-
-
+     Test the case where Slack API is wrongly configured. (i.e wrong URL)
+#### API Testing
+     Validate expected responses.
+     Validate HTTP response codes.
+     With incorrect payload, API should send correct response.
+     Test Auth: Call the API without authentication.
+     Test a case for 401 Unauthorized.
 
 ## Author
 
