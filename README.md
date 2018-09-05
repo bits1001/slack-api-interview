@@ -63,14 +63,13 @@ Observe that the message **It is raining. Carry an umbrella** is sent to the #br
      If a user is not signed in, they should see the message when they login along with the correct timestamp of when the message was actually sent.
      Test on the mobile slack app. Push notification when a user receives the message
      Test a very long message and the time it takes to be sent.
-     Test the case where Slack API is unavailable.
-     TEst the case where Slack API is wrongly configured. (i.e wrong URL)
      When a user clicks the button, it should correctly display the status of the action.
      Test the case with connectivity problems.
      Test all the cases in a slow network connection.
      Test timeouts.
      Messages should have the correct timestamp when delivered.
-     The incoming message should be visible to all the members of the channel
+     The incoming message should be visible to all the members of the channel.
+     Non-members of the channel should not receive/see the message
 #### Performance Tests
      Test how long does it take for the message to be sent.
 #### Stress Tests
@@ -78,6 +77,9 @@ Observe that the message **It is raining. Carry an umbrella** is sent to the #br
 #### Load Tests
      Test with the channel having 300-400 members
      Tests with 100's **It's raining** events together
+#### Integration Tests
+     Test the case where Slack API is unavailable.
+     TEst the case where Slack API is wrongly configured. (i.e wrong URL)
 
 
 

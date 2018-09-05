@@ -19,7 +19,7 @@ router.get('/rained', function(req, res, next) {
 	        console.log('Message sent: ', res);
 	    }
 	});
-  res.render('rained', { message: 'It rained. Message sent to Slack.', title: 'Slacker App' });
+  res.render('rained', { message: 'Message sent to Slack.', title: 'Slacker App' });
 });
 
 module.exports = router;
