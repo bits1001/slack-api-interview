@@ -5,25 +5,26 @@ Slack Interview App
 ### Prerequisites
 
 NodeJS - https://nodejs.org/en/
+
+
 ExpressJS - https://expressjs.com/
+
+
 Slack App - https://slack.com/
+
+
 Slack APIs - https://api.slack.com/
 
-### Installing and running the app
-```
-Install latest version of NodeJS
 
+### Installing and running the app
+Install latest version of NodeJS
 Install ExpressJS 
 ```
 $ npm install express --save
 ```
-
 cd into the directory where the code resides
-
 Run the server with the command `node app.js`
-
 From a browser, go to http://localhost:3000/
-```
 
 ### What the app does
 The primary usecase this app solves is to notify everyone in a particular channel based on certain event.
