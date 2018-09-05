@@ -31,7 +31,7 @@ The primary usecase this app solves is to notify everyone in a particular channe
 e.g. Whehever it is going to rain, this app will send a message to #bring-an-umbrella Slack channel. 
 
 ### How the app works
-Steps:
+####Steps:
 
 Sign in to the Slack App.
 
@@ -41,7 +41,7 @@ Go to http://localhost:3000/
 
 Click on "Oh! It's Raining" button
 
-Observe that the message "It is raining. Carry an umbrella" is sent to the #bring-an-umbrella channel on slack
+Observe that the message **It is raining. Carry an umbrella** is sent to the #bring-an-umbrella channel on slack
 
 
 ### Technical Details
