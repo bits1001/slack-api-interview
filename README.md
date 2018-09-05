@@ -2,88 +2,50 @@
 
 Slack Interview App
 
-## Getting Started
-
-Install node v10.
-Clone the github repo
-
 ### Prerequisites
 
-What things you need to install the software and how to install them
+NodeJS - https://nodejs.org/en/
+ExpressJS - https://expressjs.com/
+Slack App - https://slack.com/
+Slack APIs - https://api.slack.com/
 
+### Installing and running the app
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+Install latest version of NodeJS
+Install ExpressJS 
+$ npm install express --save
+cd into the directory where the code resides
+Run the server with the command `node app.js`
+From a browser, go to http://localhost:3000/
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+### What the app does
+The primary usecase this app solves is to notify everyone in a particular channel based on certain event.
+e.g. Whehever it is going to rain, this app will send a message to #bring-an-umbrella Slack channel. 
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+### How the app works
+Steps:
+```Sign in to the Slack App.
+Run the dev server using the command `DEBUG=myapp:* npm start`
+Go to http://localhost:3000/
+Click on "Oh! It's Raining" button
+Observe that the message "It is raining. Carry an umbrella" is sent to the #bring-an-umbrella
+  channel on slack
 ```
 
-## Deployment
+### Technical Details
+* The app is built with Expressjs - a Node.js web framework. 
+[Expressjs](https://expressjs.com/) - The web framework used
 
-Add additional notes about how to deploy this on a live system
+* It uses nodejs Slack SDK to integrate with slack APIs. 
+[Slack SDK for Node js](https://slackapi.github.io/node-slack-sdk)
 
-## Built With
+* [Slack API](https://api.slack.com/)
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
+### Test Cases
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
+## Author
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-# slack-api-interview
+* **Mrunal Parikh** - [bits1001](https://github.com/bits1001/slack-api-interview)

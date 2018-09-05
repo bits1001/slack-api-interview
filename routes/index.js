@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 /* GET rained page. */
 router.get('/rained', function(req, res, next) {
 	// Send text to the slack channel
-	webhook.send('It has rained', function(err, res) {
+	webhook.send('It is raining. Carry an umbrella', function(err, res) {
 	    if (err) {
 	        console.log('Error:', err);
 	    } else {
