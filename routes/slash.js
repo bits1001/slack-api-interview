@@ -16,9 +16,9 @@ function drawcard(response) {
 
 	http.get(deck_options, function(res) {
 		
-		res.on("data", function(chunk) {
-    		console.log("BODY: " + chunk);
-    		var jsonObject = JSON.parse(chunk); 
+		res.on("data", function(response_data) {
+    		console.log("BODY: " + response_data);
+    		var jsonObject = JSON.parse(response_data); 
     		var image = jsonObject.cards[0].image;
     		console.log(image);
     		var card_response = { "attachments": [ { "image_url":image} ] };
