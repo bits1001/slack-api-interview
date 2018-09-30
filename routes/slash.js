@@ -21,7 +21,7 @@ function drawcard(response) {
     		var jsonObject = JSON.parse(response_data); 
     		var image = jsonObject.cards[0].image;
     		console.log(image);
-    		var card_response = { "attachments": [ { "image_url":image} ] };
+    		var card_response = { "response_type": "in_channel", "attachments": [ { "image_url":image} ] };
     		response.json(card_response);    	
   		});		
 	});
