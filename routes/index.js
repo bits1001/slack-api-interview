@@ -11,15 +11,16 @@ router.get('/', function(req, res, next) {
 
 /* GET rained page. */
 router.get('/rained', function(req, res, next) {
+	var firstname = req.query.firstname;
 	// Send text to the slack channel
-	webhook.send('It is raining. Carry an umbrella', function(err, res) {
+	webhook.send('It is raining. Carry an umbrella ' + firstname, function(err, res) {
 	    if (err) {
 	        console.log('Error:', err);
 	    } else {
 	        console.log('Message sent: ', res);
 	    }
 	});
-  res.render('rained', { message: 'Message sent to Slack.', title: 'Slacker App' });
+  res.render('rained', { message: 'Message sent on Slack to ' + firstname, title: 'Slacker App' });
 });
 
 module.exports = router;
